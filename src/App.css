@@ -94,8 +94,8 @@ h6 {
 }
 
 .App {
-	background-color: #2e2b2b;
-	color: #fff;
+	background-color: #f1f1f1;
+	color: #000;
 	min-height: 100vh;
 	display: flex;
 	gap: 30px;
@@ -105,13 +105,27 @@ h6 {
 	justify-content: center;
 }
 
-.title {
+.App.dark {
+	background-color: #2e2b2b;
+}
+
+.App.dark * {
+	color: #fff;
+}
+
+.App.dark h1.title {
+	background-color: #fff;
 	color: #000;
+}
+
+
+.title {
 	font-size: 44px;
 	margin-bottom: 30px;
 	padding: 10px;
 	border-radius: 20px;
-	background-color: #fff;
+	color: #fff;
+	background-color: #2e2b2b;
 }
 
 .link {
